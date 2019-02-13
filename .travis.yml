@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+- stable
+cache:
+  directories:
+  - node_modules
+script:
+- npm test
+- npm run build
+deploy:
+  provider: firebase
+  token:
+    secure: osEB+5DnTtW17WvVNrwnf3QyMO4GEeODaeGYKnd7aPV9ZlPdLUHlX43dFNWaehJJ5pj1Uqs1At6lfxWCckT8BbhM//mLEh2ME38iQ5nliopLuZ4FQDcK7JD2araxD8GNqKKKN/UR6ccY6T5cDBEvnFS15vwg+I1Y00c5K61Pf23h17y4GaYJ18Y5w381ifibxVXZaSdtHHvxr26tJ4yvdquDVZ4rSKfYBHBdXLrdhzbDlGb3NhPM2Poe23yyTivsFR/bq+YXT3PN11D22ZIAmfJ9q5eigfgCYEQxPz6GOomqd1WV0c+RbD4JS/DdAyob02wZHeSd12HP5x6Jf4mYlt0mm3JWaRe33nPzKKt6LcAnHlNJBk++OoQuTgXQqFYdDxYF+sEhFLP/Zkl1OH8SKFTogsPvTNBZxAOq3IkMkG8/8PmGkQ6IwhGht4EMVDTaF5t1O0e3PvX+P/JzEjrj38xFtKwCcz52pEgA7qf3Y00OL1qy0fQWx7j5OLAbXGnz5INVEiwGT1IlojUANdlafArq6vcFrImQuQZdITtf1ZpOJIDbv41cRvXT4lzLlx01vLYypwJ0Fsl1kNBYmlXLE7+IGYKFG/CDe7CBgS75MuLZ0vzZ3sBsJKxvQF3EWiJpYWkGeODcJTKmva/x/6tpppQruLApuasTN0xLGMZmyfE=
+  project: "CICDFirebase"
