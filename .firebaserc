@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "shancheasid"
+    "default": "shancheasid",
+    "shancheasid": "shancheasid"
   }
 }
